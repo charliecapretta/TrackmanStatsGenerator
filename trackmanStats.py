@@ -50,9 +50,6 @@ def getBatterXwOBA(batter_df, xwobaData):
 def getBarrels(dataframe):
     return (dataframe['ExitSpeed'] > 95).sum()
 
-#def get
-
-
 def getIP(dataframe):
     # OutsOnPlay covers field outs (including double/triple plays) but NOT strikeouts
     field_outs = int(dataframe['OutsOnPlay'].sum()) if 'OutsOnPlay' in dataframe.columns else 0
